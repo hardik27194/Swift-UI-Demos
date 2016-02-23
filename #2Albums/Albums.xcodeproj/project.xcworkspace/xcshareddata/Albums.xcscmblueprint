@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B" : 0,
+    "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA3B60FF-E272-4B4D-A3D6-9307BC87DE39",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B" : "",
+    "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Albums",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Albums.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xhuang89\/xhuang89.github.io.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xhuang68\/ios_animations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B"
+    }
+  ]
+}
