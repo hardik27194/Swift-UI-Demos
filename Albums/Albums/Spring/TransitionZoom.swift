@@ -33,7 +33,7 @@ public class TransitionZoom: NSObject, UIViewControllerTransitioningDelegate, UI
         let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
         
         if isPresenting {
-            container.addSubview(fromView)
+            container!.addSubview(fromView)
             container.addSubview(toView)
             
             toView.alpha = 0
@@ -58,12 +58,12 @@ public class TransitionZoom: NSObject, UIViewControllerTransitioningDelegate, UI
             }
         }
         
-        delay(duration, {
+        delay(duration, closure: {
             transitionContext.completeTransition(true)
         })
     }
     
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return duration
     }
     

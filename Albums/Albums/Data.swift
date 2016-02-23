@@ -11,7 +11,7 @@ import UIKit
 
 func getData() -> Array<Dictionary<String,String>> {
     
-    var data = [
+    let data = [
         [
             "album" : "Chimes of Freedeom",
             "singer": "Bob Dylan",

@@ -142,7 +142,7 @@ class ViewController: UIViewController {
             if translation.y > 100 {
                 animator.removeAllBehaviors()
                 
-                var gravity = UIGravityBehavior(items: [dialogView])
+                let gravity = UIGravityBehavior(items: [dialogView])
                 gravity.gravityDirection = CGVectorMake(0, 10)
                 animator.addBehavior(gravity)
                 
@@ -173,8 +173,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        insertBlurView(bgMaskView, UIBlurEffectStyle.Dark)
-        insertBlurView(headerMaskView, UIBlurEffectStyle.Dark)
+        insertBlurView(bgMaskView, style: UIBlurEffectStyle.Dark)
+        insertBlurView(headerMaskView, style: UIBlurEffectStyle.Dark)
         
         animator = UIDynamicAnimator(referenceView: view)
         

@@ -22,7 +22,7 @@
 
 import UIKit
 
-@objc public class SpringAnimation {
+public class SpringAnimation {
     public class func spring(duration: NSTimeInterval, animations: (() -> Void)!) {
 
         UIView.animateWithDuration(
@@ -30,7 +30,7 @@ import UIKit
             delay: 0,
             usingSpringWithDamping: 0.7,
             initialSpringVelocity: 0.7,
-            options: nil,
+            options: [],
             animations: {
 
                 animations()
@@ -101,7 +101,7 @@ import UIKit
             delay: delay,
             usingSpringWithDamping: 0.7,
             initialSpringVelocity: 0.7,
-            options: nil,
+            options: [],
             animations: {
 
                 animations()
@@ -117,7 +117,7 @@ import UIKit
             delay: 0,
             usingSpringWithDamping: 0.7,
             initialSpringVelocity: 0.7,
-            options: nil,
+            options: [],
             animations: {
                 
                 animations()
