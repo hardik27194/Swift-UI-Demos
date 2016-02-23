@@ -10,7 +10,7 @@ This is a custom **UIView** which supports the text gradient effect like this:
 ####Usage
 #####Init
 
-```
+```swift
 let gradientLabelView = XHGradientLabelView.init(frame: CGRect, withText text: String, andFont font: UIFont, withColors colors: [CGColor])
 ```
 #####Colors
