@@ -2,6 +2,22 @@
 This is projects including all my iOS animation demos.
 
 ---
+### \#4 Twitter Launch Screen Animation
+This is a Demo to reproduce twitter's launch animation
+
+####Demo
+![twitter](./Demo/twitter.gif)
+
+####Usage
+Copy and modify the code in **AppDelegate.swift**.  
+The animation is coded in side this method before the root controller is loaded:  
+```swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+	// animation code
+	}
+```
+
+---
 ### \#3 XHGradientLabelView
 This is a custom **UIView** which supports the text gradient effect like this:
 
