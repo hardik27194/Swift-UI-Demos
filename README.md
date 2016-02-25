@@ -31,7 +31,6 @@ Copy **XHGradientLabelView.swift** to your project.
 ---
 ### \#4 XHCircleStrokeView
 <img src='./Demo/circle.png' height='80' width='80'></img>  
-![test](./Demo/circle80.png)  
 This is a custon **UIview** which supports the circle stroke animation with a time label. 
 
 ####Demo
@@ -81,6 +80,7 @@ Copy **XHCircleStroleView.swift** to your project.
 
 ---
 ### \#3 Twitter Launch Screen Animation
+<img src='./Demo/star.png' height='80' width='80'></img>  
 This is a Demo to reproduce twitter's launch animation
 
 ####Demo
@@ -97,11 +97,13 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
 --- 
 ### \#2 Albums	
+<img src='./Demo/album.png' height='80' width='80'></img>  
 This is a demo with some cool animations using **Gestures** and **UIKit Dynamics** (*UIDynamicAnimator*, *UIAttachmentBehavior*, *UIGravityBehavior* and *UISnapBehavior*).		
 
 ![albums demo](./Demo/album.gif)   
 
 ---
 ### \#1 XHSlideMenuDemo	
+<img src='./Demo/slide.png' height='80' width='80'></img>  
 This is a custormize slide-out navigation panel.  			
 ![slide demo](./Demo/slide.gif)   
