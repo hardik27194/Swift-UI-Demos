@@ -2,8 +2,8 @@
 This is projects including all my iOS animation demos.
 
 ---
-![test](./Demo/gradient.png)  
 ### \#5 XHGradientLabelView 
+![test](./Demo/gradient.png)  
 This is a custom **UIView** which supports the text gradient effect like this:  
 
 ![gradient demo](./Demo/gradient.gif)  
@@ -30,6 +30,7 @@ Copy **XHGradientLabelView.swift** to your project.
 
 ---
 ### \#4 XHCircleStrokeView
+![test](./Demo/circle.png)  
 This is a custon **UIview** which supports the circle stroke animation with a time label. 
 
 ####Demo
