@@ -10,15 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var timer = 3
     var circleStrokeView: XHCircleStrokeView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         view.backgroundColor = UIColor(red: 61/255, green: 66/255, blue: 78/255, alpha: 1.0)
-        
+
         let circleFrame = CGRectMake(view.center.x - 200/2, view.center.y - 200, 200, 200)
         circleStrokeView = XHCircleStrokeView(
             frame: circleFrame,
@@ -40,7 +37,14 @@ class ViewController: UIViewController {
         playButton.addTarget(self, action: "play:", forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(playButton)
         
-        let resetButton = UIButton(frame: CGRectMake(view.center.x - 100/2, view.center.y + 110, 100, 50))
+        let pauseButton = UIButton(frame: CGRectMake(view.center.x - 100/2, view.center.y + 110, 100, 50))
+        pauseButton.setTitle("Pause", forState: UIControlState.Normal)
+        pauseButton.setTitleColor(UIColor.cyanColor(), forState: UIControlState.Normal)
+        pauseButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 30.0)
+        pauseButton.addTarget(self, action: "pause:", forControlEvents: UIControlEvents.TouchUpInside)
+        view.addSubview(pauseButton)
+        
+        let resetButton = UIButton(frame: CGRectMake(view.center.x - 100/2, view.center.y + 170, 100, 50))
         resetButton.setTitle("Reset", forState: UIControlState.Normal)
         resetButton.setTitleColor(UIColor.cyanColor(), forState: UIControlState.Normal)
         resetButton.titleLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 30.0)
@@ -56,11 +60,7 @@ class ViewController: UIViewController {
         circleStrokeView.reset()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func pause(sender: UIButton) {
+        circleStrokeView.pause()
     }
-
-
 }
-

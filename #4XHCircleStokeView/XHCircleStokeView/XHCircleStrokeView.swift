@@ -10,6 +10,7 @@ import UIKit
 
 class XHCircleStrokeView: UIView {
 
+// MARK: varibles
     var backColor: UIColor!
     var frontColor: UIColor!
     var fillColor: UIColor!
@@ -22,9 +23,18 @@ class XHCircleStrokeView: UIView {
     var labelEnable: Bool = true
     var glowEnabel: Bool = false
     
-    var time = 5
+    var time = 5.0
     var clock: NSTimer?
     
+    // state varible
+    enum ClockState {
+        case Paused
+        case Init
+        case Playing
+    }
+    var state: ClockState = .Init
+    
+// MARK: initial method
     init(frame: CGRect, withDuration duration: Double, backColor: UIColor, frontColor: UIColor, fillColor: UIColor, strokeWidth: CGFloat, enableTimeLabel labelEnable: Bool, enableGlow glowEnable: Bool) {
         
         self.duration = duration
@@ -37,7 +47,7 @@ class XHCircleStrokeView: UIView {
         self.timeLabel = UILabel()
         self.labelEnable = labelEnable
         self.glowEnabel = glowEnable
-        
+
         super.init(frame: frame)
         self.setup()
     }
@@ -46,8 +56,8 @@ class XHCircleStrokeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+// MARK: view setup
     private func setup() {
-        
         let circleRadius = min(frame.size.width, frame.size.height) / 2.0
         let circleCenterToSelf = CGPointMake(
             self.bounds.size.width > circleRadius ? bounds.size.width / 2.0 : circleRadius,
@@ -85,38 +95,81 @@ class XHCircleStrokeView: UIView {
             self.addSubview(timeLabel)
         }
     }
-    
+
+// MARK: view control method
     func reset() {
-        time = Int(duration)
-        timeLabel.text = "\(time)"
+        if state == .Paused {
+            resumeLayer(self.layer)
+        }
+        time = duration
+        timeLabel.text = "\(Int(time))"
         clock?.invalidate()
+        state = .Init
         circleFrontLayer.removeAllAnimations()
         circleFrontLayer.hidden = true
+        print(state)
+    }
+    
+    func pause() {
+        if state == .Playing {
+            pauseLayer(self.layer)
+            state = .Paused
+            clock?.invalidate()
+        }
+        print(state)
+    }
+    
+    func resume() {
+        if state == .Paused {
+            resumeLayer(self.layer)
+        }
     }
     
     func play() {
-        let strokeAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        strokeAnimation.duration = duration
-        strokeAnimation.fromValue = 0.0
-        strokeAnimation.toValue = 1.0
-        circleFrontLayer.hidden = false
-        circleFrontLayer.addAnimation(strokeAnimation, forKey: "stroke")
-        
-        time = Int(duration)
-        timeLabel.text = "\(time)"
-        // print("\(time)")
+        if state == .Playing {
+            return
+        }
+        if state == .Paused {
+            resumeLayer(self.layer)
+        } else {
+            let strokeAnimation = CABasicAnimation(keyPath: "strokeEnd")
+            strokeAnimation.duration = duration
+            strokeAnimation.fromValue = 0.0
+            strokeAnimation.toValue = 1.0
+            circleFrontLayer.hidden = false
+            circleFrontLayer.addAnimation(strokeAnimation, forKey: "stroke")
+            time = duration
+            timeLabel.text = "\(Int(time))"
+        }
         clock?.invalidate()
-        clock = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countdown:", userInfo: nil, repeats: true)
+        clock = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "countdown:", userInfo: nil, repeats: true)
+        state = .Playing
+        print(state)
+    }
+
+// MARK: helper method
+    func countdown(sender: AnyObject) {
+        time -= 0.01
+        timeLabel.text = "\(Int(floor(time)) + 1)"
+        if time <= 0 {
+            clock?.invalidate()
+            state = .Init
+            print(state)
+        }
     }
     
-    func countdown(sender: AnyObject) {
-        time--
-        timeLabel.text = "\(time)"
-        // print("\(time)")
-        if time == 0 {
-            clock?.invalidate()
-        }
-        
-        
+    func pauseLayer(layer: CALayer) {
+        let pausedTime = layer.convertTime(CACurrentMediaTime(), fromLayer: nil)
+        layer.speed = 0.0
+        layer.timeOffset = pausedTime
+    }
+    
+    func resumeLayer(layer: CALayer) {
+        let pausedTime = layer.timeOffset
+        layer.speed = 1.0
+        layer.timeOffset = 0.0
+        layer.beginTime = 0.0
+        let timeSincePause = layer.convertTime(CACurrentMediaTime(), fromLayer: nil) - pausedTime
+        layer.beginTime = timeSincePause
     }
 }
