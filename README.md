@@ -31,7 +31,7 @@ Copy **XHGradientLabelView.swift** to your project.
 ---
 ### \#4 XHCircleStrokeView
 <img src='./Demo/circle.png' height='80' width='80'></img>  
-![test](./Demo/circle.png)  
+![test](./Demo/circle80.png)  
 This is a custon **UIview** which supports the circle stroke animation with a time label. 
 
 ####Demo
