@@ -2,8 +2,9 @@
 This is projects including all my iOS animation demos.
 
 ---
-### \#5 XHGradientLabelView ![test](./Demo/gradient.png)
-This is a custom **UIView** which supports the text gradient effect like this:
+![test](./Demo/gradient.png)  
+### \#5 XHGradientLabelView 
+This is a custom **UIView** which supports the text gradient effect like this:  
 
 ![gradient demo](./Demo/gradient.gif)  
 
