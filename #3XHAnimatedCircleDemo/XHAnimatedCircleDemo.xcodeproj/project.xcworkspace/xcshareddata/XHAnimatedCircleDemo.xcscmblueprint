@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B" : 0,
+    "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E434696D-7CD7-4A79-8BF3-3E548E96D71E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B" : "Swift%20UI%20Demos\/",
+    "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XHAnimatedCircleDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "#3XHAnimatedCircleDemo\/XHAnimatedCircleDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xhuang89\/xhuang89.github.io.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38F7D0435955DFD1D50DBC02D5F6CBFEC80BE3A6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xhuang68\/ios_animations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE6B3B84702F17F2E34DD1533FD8EFF76A5F3B1B"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 This is projects including all my iOS animation demos.
 
 ---
-### \#5 XHGradientLabelView 
+### \#6 XHGradientLabelView 
 <img src='./Demo/gradient.png' height='80' width='80'></img>  
 This is a custom **UIView** which supports the text gradient effect like this:  
 
@@ -29,7 +29,7 @@ You can choose any color you like to fill the text. Here are two color demos:
 Copy **XHGradientLabelView.swift** to your project.
 
 ---
-### \#4 XHCircleStrokeView
+### \#5 XHCircleStrokeView
 <img src='./Demo/circle.png' height='80' width='80'></img>  
 This is a custon **UIview** which supports the circle stroke animation with a time label. 
 
@@ -79,7 +79,7 @@ circleStrokeView.reset()
 Copy **XHCircleStroleView.swift** to your project.  
 
 ---
-### \#3 Twitter Launch Screen Animation
+### \#4 Twitter Launch Screen Animation
 <img src='./Demo/star.png' height='80' width='80'></img>  
 This is a Demo to reproduce twitter's launch animation
 
@@ -94,6 +94,16 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 	// animation code
 	}
 ```
+---
+### \#3 XHAnimatedCircleDemo
+<img src='./Demo/drag.png' height='80' width='80'></img>   
+This is a demo to show the drag effect on the bubble view.  
+
+*	The number below the view represents the draging progress.   
+*	This circle layer consists of four seprate curves. And the yellow points in the view are the points to control these four curves.   
+*	One of the use case of this effect could be the page control UI component. The bubble will be dragged and the shape will be changed between each page mark.
+
+![drag demo](./Demo/drag.gif)
 
 --- 
 ### \#2 Albums	
