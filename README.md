@@ -96,7 +96,8 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```
 ---
 ### \#3 XHAnimatedCircleDemo
-<img src='./Demo/slide.png' height='80' width='80'></img>   
+<img src='./Demo/drag.png' height='80' width='80'></img>   
+![./Demo/drag.png](./Demo/drag.png)  
 This is a demo to show the drag effect on the bubble view.  
 
 *	The number below the view represents the draging progress.   
