@@ -11,7 +11,7 @@ This is an animation demo to simulate the radar effect. When you launch the app,
 ###Find my iPhone icon
 Also I drew the Apple's find my iPhone icon using Sketch. You can download the sketch file if you need.  
 
-<a href='./07XHRadarDemo/demo/FindMyiphoneIcon'><img src='./07XHRadarDemo/demo/sketch.png' height='80'></img></a>  
+<a href='https://github.com/xhuang68/Swift-UI-Demos/blob/master/07XHRadarDemo/demo/FindMyiphoneIcon.sketch'><img src='./07XHRadarDemo/demo/sketch.png' height='80'></img></a>  
 
 ---
 ## \#6 XHGradientLabelView 
