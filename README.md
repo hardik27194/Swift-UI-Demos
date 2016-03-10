@@ -2,6 +2,25 @@
 This is projects including all my iOS animation demos.
 
 ---
+## \#8 SwiftDesignPatternDemo
+<img src='./08SwiftDesignPatternDemo/demo/icon.png' height='80' width='80'></img>  
+This is a demo application to show the albums related information. In the process of developing this app, you’ll become acquainted with the most common Cocoa design patterns:  
+
+*	*Creational*: **Singleton**
+*	*Structural*: **MVC**, **Decorator**, **Adapter**, **Facade**
+*	*Behavioral*: **Observer**, and **Memento**  
+
+###Demo
+![demo](./08SwiftDesignPatternDemo/demo/dp.gif) 
+
+###Tutorial
+The original tutorial (**Objective-C** Version) is written by Eli Ganem.  
+The **Swift** version is created by Vincent Ngo: [Part1](https://www.raywenderlich.com/86477/introducing-ios-design-patterns-in-swift-part-1) and [Part2](https://www.raywenderlich.com/90773/introducing-ios-design-patterns-in-swift-part-2).  
+
+###Update  
+My code is updated to **Swift 2.1** and tested in **Xcode 7**.  
+
+---
 ## \#7 XHRadarView
 <img src='./07XHRadarDemo/demo/radar.png' height='80' width='80'></img>  
 This is an animation demo to simulate the radar effect. When you launch the app, it will update your local address and start the radar effect animation. The fradient radar effect is based on the **[XHAngleGradientLayer](https://github.com/xhuang68/XHAngleGradientLayer)** (Swift) or **[AngleGradientLayer](https://github.com/paiv/AngleGradientLayer)** (Objective-C).  
